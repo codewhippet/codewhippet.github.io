@@ -1,0 +1,6 @@
+code/.vs/
+code/Code
+code/x64/
+*.sln
+*.vcxproj*
+code/Code.cpp
