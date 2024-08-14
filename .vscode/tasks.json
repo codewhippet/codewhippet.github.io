@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks":
+    [
+        {
+            "label": "BundleSite",
+            "type": "shell",
+            "command": "${workspaceFolder}\\.vscode\\BuildSite.bat"
+        },
+        {
+            "label": "Wait",
+            "type":"shell",
+            "command":"timeout 15"
+        },
+        {
+            "label": "LaunchPreview",
+            "dependsOn":["BundleSite","Wait"],
+            "dependsOrder": "sequence"
+        }
+    ]
+}
